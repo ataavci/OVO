@@ -4,7 +4,7 @@ const path = require("path");
 const userRoutes = require("./routes/user");
 const adminRoutes = require("./routes/admin");
 const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
+
 
 app.use("/static", express.static(path.join(__dirname, "public")));
 app.use(bodyParser.json());
