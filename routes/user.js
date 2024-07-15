@@ -17,7 +17,7 @@ router.use("/tr", function(req, res) {
     res.render("users/index-tr");
 });
 
-router.use("./en", function(req, res) {
+router.use("/", function(req, res) {
 
     res.render("users/index");
 });
