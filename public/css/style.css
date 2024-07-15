@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: 'montserrat',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.navbar a{
+    font-size: 14px;
+    font-weight: 1000;
+}
+.navbar-toggler{
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0,3;
+    background: #ffffff;;
+}
+.w-100 height{
+    height: 90vh;
+    width: 150%;
+}
+.carousel-item{
+    min-height: 300px;
+}
+.carousel-caption{
+    text-align: center;
+    margin-bottom: 200px;
+    z-index: 2; 
+     } 
+.carousel-caption h1 {
+      font-size: 60px;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     font-weight: 500;
+      line-height: 60px;
+      text-align: center;
+    }
+    
+.carousel-caption p {
+     font-family: 'Montserrat', sans-serif;
+     width: 60%;
+     font-size: 16px; 
+     line-height: 1.9;
+     text-align: center;
+     margin: 0 auto; /* Ortalamak için eklendi */
+    }
+
+.carousel-item .carousel-caption input{
+    padding: 0.73rem 1rem;
+}
+.carousel-inner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0, 0.6);
+    z-index: 1;
+    
+}
+@media only screen and ( max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption h1{
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+.carousel-caption{
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+}
+#analysis{
+    font-family: 'montserrat',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.team-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+ }
+
+ *{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+ }
+ .wrapper{
+    font-family: 'raleway';
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background: #fafafa;
+
+ }
+ .wrapper h1{
+    font-size: 3em;
+    margin: 25px 0 ;
+    text-align: center;
+    font-weight: 500;
+    color: #079223;
+ }
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+.card{
+    min-height: 220px;
+    width: 400px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.4);
+}
+.card i{
+    margin: 20px;
+    color: #079223;
+}
+.card p{
+    color: #010d01;
+    text-align: center;
+}
+.card h2{
+    color: #021105;
+    text-align: center;
+    margin: 12px;
+}
+.card:hover i,
+.card:hover p{
+    color: #f6f6f9;
+}
+.card:h2{
+    font-weight: 500px;
+}
+ .card:nth-child(1):hover {
+    background: linear-gradient(45deg, 
+                                rgba(0, 255, 0, 0.7) 0%, 
+                                rgba(0, 128, 0, 0.7) 100%), 
+                                url(/static/image/forest.jpg);
+    background-size: cover;
+} 
+.card:nth-child(2):hover {
+    background: linear-gradient(45deg, 
+                                rgba(0, 255, 0, 0.7) 0%, 
+                                rgba(0, 128, 0, 0.7) 100%), 
+                                url(/static/image/forest.jpg);
+    background-size: cover;
+}
+.card:nth-child(3):hover {
+    background: linear-gradient(45deg, 
+                                rgba(0, 255, 0, 0.7) 0%, 
+                                rgba(0, 128, 0, 0.7) 100%), 
+                                url(/static/image/forest.jpg);
+    background-size: cover;
+}
+.card:nth-child(4):hover {
+    background: linear-gradient(45deg, 
+                                rgba(0, 255, 0, 0.7) 0%, 
+                                rgba(0, 128, 0, 0.7) 100%), 
+                                url(/static/image/forest.jpg);
+    background-size: cover;
+}
+.card:nth-child(5):hover {
+    background: linear-gradient(45deg, 
+                                rgba(0, 255, 0, 0.7) 0%, 
+                                rgba(0, 128, 0, 0.7) 100%), 
+                                url(/static/image/forest.jpg);
+    background-size: cover;
+}
+.card:nth-child(6):hover {
+    background: linear-gradient(45deg, 
+                                rgba(0, 255, 0, 0.7) 0%, 
+                                rgba(0, 128, 0, 0.7) 100%), 
+                                url(/static/image/forest.jpg);
+    background-size: cover;
+}
+#team .team-card {
+    width: 100%; /* Kartların tam genişlikte olmasını sağlar */
+    margin-bottom: 20px; /* Kartlar arasında dikey boşluk */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(16, 12, 12, 0.1);
+    transition: background 0.3s ease; /* Hover geçişi için */
+}
+
+#team .team-card:hover {
+    background: linear-gradient(45deg, 
+                                rgba(54, 69, 208, 0.7) 0%, 
+                                rgba(73, 60, 250, 0.7) 100%), 
+                                url(/static/image/beach-2413081.jpg);
+    background-size: cover;
+}
+
+#team .team-card .card-body {
+    padding: 20px;
+}
+
+#team .row .col-md-2 {
+    margin-bottom: 20px; /* Her kart sütununun altında dikey boşluk */
+}
+#team .team-card:hover p{
+    color: #0e0e17;
+}
+@media(max-width: 991px){
+    .wrapper{
+        padding: 25px;
+    }
+    .wrapper h1{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+    .content-box{
+        flex-direction: column;
+        width: 100%;
+    }
+    .card{
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
+.container h2{
+    color: rgb(13, 85, 121);
+}
+
+.pricing-wrapper {
+    max-width: 1090px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.pricing-wrapper .table {
+    width: calc(33% - 20px);
+    background: #fff;
+    padding: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+}
+
+.table:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.price-section {
+    display: flex;
+    justify-content: center;
+}
+
+.price-area {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.price-area .inner-area {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    color: #fff;
+    line-height: 117px;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    left: 17px;
+}
+
+.inner-area .text {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.inner-area .price {
+    font-size: 45px;
+    font-weight: 500;
+    margin-left: 16px;
+}
+
+.package-name {
+    width: 100%;
+    height: 2px;
+    margin: 35px 0;
+    position: relative;
+}
+
+.package-name::before {
+    position: absolute;
+    content: attr(data-name);
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0 15px;
+    transform: translate(-50%, -50%);
+}
+
+.features li {
+    margin-bottom: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features li .list-name {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.features li .icon {
+    font-size: 15px;
+}
+
+.features li .icon-check {
+    color: #2db94d;
+}
+
+.features li .icon-cross {
+    color: #ac2c0f;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.btn button {
+    width: 120%;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Renk ayarları */
+.silver {
+    box-shadow: 0 4px 8px rgba(192, 192, 192, 0.5);
+}
+.silver .price-area,
+.silver .inner-area,
+.silver .btn button {
+    background: #c0c0c0;
+}
+.silver .package-name {
+    background: #e0e0e0;
+}
+.silver .package-name::before {
+    color: #c0c0c0;
+}
+
+.gold {
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5);
+}
+.gold .price-area,
+.gold .inner-area,
+.gold .btn button {
+    background: #ffd700;
+}
+.gold .package-name {
+    background: #fff8dc;
+}
+.gold .package-name::before {
+    color: #ffd700;
+}
+
+.platinum {
+    box-shadow: 0 4px 8px rgba(229, 228, 226, 0.5);
+}
+.platinum .price-area,
+.platinum .inner-area,
+.platinum .btn button {
+    background: #e5e4e2;
+}
+.platinum .package-name {
+    background: #f5f5f5;
+}
+.platinum .package-name::before {
+    color: #e5e4e2;
+}
+
+.card-blog {
+    width: 100%;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  .card-blog .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-blog .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .card-blog .btn {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .card-blog:nth-child(1):hover {
+    background: linear-gradient(45deg, rgba(0, 255, 0, 0.7) 0%, rgba(0, 128, 0, 0.7) 100%), url('/static/image/gemi.jpg');
+    background-size: cover;
+    background-blend-mode: overlay;
+  }
+  footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 50px 50px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  20px;
+    background-color: white;
+    margin: 50px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    }
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }
+  
