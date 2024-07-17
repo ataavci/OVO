@@ -489,3 +489,88 @@
     margin-right: 8px;
   }
   
+  #blog-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#main-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#main-image img {
+    width: 100%;
+    display: block;
+    filter: brightness(50%);
+}
+
+#main-image .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#comments {
+    margin-top: 20px;
+}
+
+#comments .comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    animation: slideIn 0.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+#comments .comment:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+#comments .comment:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+#comments .comment:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+#comments .comment:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+#comments .comment:nth-child(5) {
+    animation-delay: 1s;
+}
+
+#comments .comment img {
+    width: 80px;  /* Boyut arttırıldı */
+    height: 80px;  /* Boyut arttırıldı */
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+#comments .comment p {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

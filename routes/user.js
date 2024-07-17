@@ -2,6 +2,11 @@ const express=require("express");
 const router=express.Router();
 const path=require("path");
 
+router.use("/cdr", function(req, res) {
+  
+    res.render("users/cdr");
+});
+
 router.use("/login", function(req, res) {
   
     res.render("users/login");
