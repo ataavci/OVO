@@ -2,6 +2,16 @@ const express=require("express");
 const router=express.Router();
 const path=require("path");
 
+router.use("/tr/#blog", function(req, res) {
+
+    res.render("users/index-tr/#blog");
+});
+
+router.use("/#blog", function(req, res) {
+
+    res.render("users/index/#blog");
+});
+
 router.use("/cdr", function(req, res) {
   
     res.render("users/cdr");
