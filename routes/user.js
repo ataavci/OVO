@@ -7,6 +7,11 @@ router.use("/cdr", function(req, res) {
     res.render("users/cdr");
 });
 
+router.use("/cdr-tr", function(req, res) {
+  
+    res.render("users/cdr-tr");
+});
+
 router.use("/login", function(req, res) {
   
     res.render("users/login");
