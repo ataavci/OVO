@@ -443,9 +443,10 @@
     background-size: cover;
     background-blend-mode: overlay;
   }
-  footer{
+  footer {
     background-color: #63bde1;
 }
+
 .footerContainer {
     display: flex;
     flex-direction: column;
@@ -454,41 +455,40 @@
     background: url('/static/image/gemi.jpg') no-repeat center center;
     background-size: cover;
     color: white;
-  }
-  
-  .companyLogos {
+}
+
+.companyLogos {
     display: flex;
     justify-content: center;
     gap: 50px;
     margin-bottom: 20px;
-  }
-  
-  .company-logo {
+}
+
+.company-logo {
     height: 175px; 
     width: auto;
-  }
-  
-  .socialIcons {
+}
+
+.socialIcons {
     display: flex;
     justify-content: center;
     gap: 20px;
     list-style-type: none;
     padding: 0;
-  }
-  
-  .socialIcons li a {
+}
+
+.socialIcons li a {
     color: white;
     text-decoration: none;
-  }
-  
-  .socialIcons li a:hover {
+}
+
+.socialIcons li a:hover {
     color: #ddd;
-  }
-  
-  .socialIcons i {
+}
+
+.socialIcons i {
     margin-right: 8px;
-  }
-  
+}
   #blog-container {
     width: 80%;
     max-width: 800px;
@@ -595,3 +595,144 @@
     line-height: 1.6;
     color: #555;
 }
+
+
+
+#trading-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 100%;
+}
+
+#trading-title {
+    background-color: #ffeb99;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#trading-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#trading-compliance, #trading-voluntary, #trading-national {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+#trading-compliance {
+    background-color: #e0ffcf;
+    border: 2px solid #008000;
+}
+
+#trading-voluntary {
+    background-color: #ffdbdb;
+    border: 2px solid #800000;
+}
+
+#trading-national {
+    background-color: #e0dfff;
+    border: 2px solid #400080;
+}
+
+
+/* styles.css */
+
+#compliance-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 60%;
+    max-width: 600px;
+    height: auto;
+}
+
+#compliance-title {
+    background-color: #ffeb99;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#compliance-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#compliance-asset, #compliance-how, #compliance-limitations {
+    background-color: #e0ffcf;
+    border: 2px solid #008000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    box-sizing: border-box;
+    margin: 10px auto;
+}
+
+#compliance-how {
+    background-color: #ffdbdb;
+    border: 2px solid #800000;
+}
+
+#compliance-limitations {
+    background-color: #e0dfff;
+    border: 2px solid #400080;
+}
+
+
+
+/* <div id="compliance-container">
+            <div id="compliance-title">NATIONAL LEVEL</div>
+            <div id="compliance-content">
+                <div id="compliance-asset">
+                    <h3>Underlying Asset</h3>
+                    <p>Carbon Credits &
+                        Offsets</p>
+                </div>
+                <div id="compliance-how">
+                    <h3>How it works?</h3>
+                    <p>Similar to voluntary carbon
+                        market but at its largest scale</p>
+                    <p> A buyer nation can purchase
+                        carbon credits from a host nation
+                        to offset its emissions and fulfill
+                        Nationally Determined
+                        Contributions (NDCs). Eg.
+                        Internationally Transferrable
+                        Mitigation Outcome (ITMO)</p>
+                </div>
+                <div id="compliance-limitations">
+                    <h3>Key Limitations</h3>
+                    <p>Direct trading between nations may
+                        undermine the value of carbon
+                        offsets & pricing, which will
+                        disadvantage poorer countries</p>
+                    <p>Revenue from the trade of carbon
+                        credits may not reach the
+                        communities & individuals that
+                        actually do the work</p>
+                </div>
+            </div>
+        </div> */
