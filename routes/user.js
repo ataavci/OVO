@@ -2,6 +2,18 @@ const express=require("express");
 const router=express.Router();
 const path=require("path");
 
+router.use("/turkey_rapor", function(req, res) {
+  
+    res.render("users/turkey_rapor");
+});
+
+
+router.use("/turkey_rapor-tr", function(req, res) {
+  
+    res.render("users/turkey_rapor-tr");
+});
+
+
 router.use("/carbon_credi-tr", function(req, res) {
   
     res.render("users/carbon_credi-tr");
