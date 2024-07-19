@@ -2,7 +2,10 @@ const express=require("express");
 const router=express.Router();
 const path=require("path");
 
-
+router.use("/carbon_credi-tr", function(req, res) {
+  
+    res.render("users/carbon_credi-tr");
+});
 
 
 router.use("/carbon_credi", function(req, res) {
