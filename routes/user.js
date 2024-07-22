@@ -2,6 +2,16 @@ const express=require("express");
 const router=express.Router();
 const path=require("path");
 
+router.use("/#special", function(req, res) {
+  
+    res.render("users/index/#special");
+});
+
+router.use("/tr/#special", function(req, res) {
+  
+    res.render("users/index-tr/#special");
+});
+
 router.use("/turkey_rapor", function(req, res) {
   
     res.render("users/turkey_rapor");
