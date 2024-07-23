@@ -15,10 +15,11 @@
     line-height: 0,3;
     background: #289a11;;
 }
-.w-100 height{
+.w-100.height {
     height: 80vh;
-    width: 150%;
+    width: 100%; /* 150% yerine 100% yaparak kaymayı önleyin */
 }
+
 .carousel-item {
     min-height: 100px;
     position: relative;
@@ -35,9 +36,22 @@
     right: 0;
 }
 
+.carousel-caption h1 {
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: center;
+    color: #fff; /* Yazı rengini beyaz yap */
+}
 
-
-
+.carousel-caption p {
+    font-size: 16px;
+    line-height: 1.9;
+    width: 60%;
+    margin: 0 auto; /* Ortalamak için eklendi */
+    color: #fff; /* Yazı rengini beyaz yap */
+}
 
 .carousel-item .carousel-caption input {
     padding: 0.73rem 1rem;
@@ -58,35 +72,33 @@
     .carousel-caption {
         font-family: 'Montserrat', sans-serif;
         text-align: center;
-        position: center;
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 80%; /* Genişliği azaltarak ortalamayı kolaylaştırıyoruz */
+        width: 90%; /* Genişliği artırarak daha iyi görünüm sağlayın */
         padding: 10px;
         box-sizing: border-box;
         z-index: 2;
     }
 
     .carousel-caption h1 {
-        font-size: 18px;
-        font-family: 'Montserrat', sans-serif;
+        font-size: 20px; /* Başlık boyutunu azaltın */
         letter-spacing: 0;
         font-weight: 500;
         line-height: 1.2;
-        text-align: center;
-        margin: center; /* Varsayılan marjinleri kaldırıyoruz */
+        margin: 0;
     }
 
     .carousel-caption p {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
+        font-size: 14px; /* Paragraf boyutunu azaltın */
         line-height: 1.5;
-        text-align: center;
-        margin: center;
         width: 100%;
+        margin: 10px auto;
     }
 }
+
+    
 
 
 #analysis {
