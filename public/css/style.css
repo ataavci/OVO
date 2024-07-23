@@ -70,7 +70,7 @@
     z-index: 1;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
     .carousel-caption {
         font-family: 'Montserrat', sans-serif;
         text-align: center;
@@ -94,9 +94,9 @@
     }
 
     .carousel-caption p {
-        font-size: 14px; /* Paragraf boyutunu azaltın */
+        font-size: 10px; /* Paragraf boyutunu azaltın */
         line-height: 1.5;
-        margin: 10px auto;
+        margin: 20px auto;
         width: 100%;
         text-align: center; /* Ortalamak için eklendi */
     }
