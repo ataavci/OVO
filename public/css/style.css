@@ -16,8 +16,8 @@
     background: #289a11;;
 }
 .w-100.height {
-    height: 80vh;
-    width: 100%; /* 150% yerine 100% yaparak kaymayı önleyin */
+    height: 100vh;
+    width: 110%; /* 150% yerine 100% yaparak kaymayı önleyin */
 }
 
 .carousel-item {
@@ -76,7 +76,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 90%; /* Genişliği artırarak daha iyi görünüm sağlayın */
+        width: 80%; /* Genişliği azaltarak ortalamayı kolaylaştırıyoruz */
         padding: 10px;
         box-sizing: border-box;
         z-index: 2;
@@ -88,13 +88,15 @@
         font-weight: 500;
         line-height: 1.2;
         margin: 0;
+        text-align: center; /* Ortalamak için eklendi */
     }
 
     .carousel-caption p {
         font-size: 14px; /* Paragraf boyutunu azaltın */
         line-height: 1.5;
-        width: 100%;
         margin: 10px auto;
+        width: 100%;
+        text-align: center; /* Ortalamak için eklendi */
     }
 }
 
