@@ -485,9 +485,13 @@ details[open] .details-box {
     background-blend-mode: overlay;
   }
   footer {
-    background-color: #f8f9fa;
+    background-image: url('/static/image/gemi.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 20px 0;
     text-align: center;
+    color: white; /* Footer içeriğinin görünürlüğünü artırmak için yazı rengini beyaz yap */
   }
   
   .footerContainer {
@@ -515,6 +519,14 @@ details[open] .details-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .socialIcons a {
+    color: black;
+    text-decoration: none; /* Bağlantı alt çizgisini kaldırmak için */
+  }
+  
+  .socialIcons a:hover {
+    color: black; /* Üzerine gelindiğinde de siyah kalsın */
   }
   
   .socialIcons li {
@@ -654,6 +666,7 @@ details[open] .details-box {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     width: 100%;
+    overflow: hidden;
 }
 
 #trading-title {
