@@ -67,19 +67,39 @@
     z-index: 1;
 }
 
-/* Responsive düzenlemeler */
 @media only screen and (max-width: 767px) {
     .carousel-caption {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
         padding: 10px 15px;
-        font-size: 15px;
-        bottom: 10px; /* Mobil cihazlarda alt kenara daha yakın */
+        box-sizing: border-box;
+        z-index: 2;
     }
-    
+
     .carousel-caption h1 {
-        font-size: 30px;
-        line-height: 1.2; /* Daha kompakt bir görünüm için */
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 0;
+        font-weight: 500;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .carousel-caption p {
+        font-family: 'Montserrat', sans-serif;
+        width: 80%;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        margin: 10px auto;
     }
 }
+
 
 #analysis {
     font-family: 'Montserrat', sans-serif;
