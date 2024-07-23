@@ -75,7 +75,7 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        width: 100%;
+        width: 90%; /* Genişliği biraz azaltarak ortalamayı kolaylaştırıyoruz */
         padding: 10px 15px;
         box-sizing: border-box;
         z-index: 2;
@@ -88,11 +88,12 @@
         font-weight: 500;
         line-height: 1.2;
         text-align: center;
+        margin: 0; /* Varsayılan marjinleri kaldırıyoruz */
     }
 
     .carousel-caption p {
         font-family: 'Montserrat', sans-serif;
-        width: 80%;
+        width: 100%;
         font-size: 14px;
         line-height: 1.5;
         text-align: center;
