@@ -485,51 +485,58 @@ details[open] .details-box {
     background-blend-mode: overlay;
   }
   footer {
-    background-color: #63bde1;
-}
-
-.footerContainer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footerContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px;
-    background: url('/static/image/gemi.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-}
-
-.companyLogos {
+  }
+  
+  .companyLogos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
     margin-bottom: 20px;
-}
-
-.company-logo {
-    height: 175px; 
-    width: auto;
-}
-
-.socialIcons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style-type: none;
+  }
+  
+  .company-logo {
+    margin: 10px;
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .socialIcons {
+    list-style: none;
     padding: 0;
-}
-
-.socialIcons li a {
-    color: white;
-    text-decoration: none;
-}
-
-.socialIcons li a:hover {
-    color: #ddd;
-}
-
-.socialIcons i {
-    margin-right: 8px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .socialIcons li {
+    margin: 0 10px;
+  }
+  
+  /* Mobil cihazlar için medya sorgusu */
+  @media (max-width: 768px) {
+    .footerContainer {
+      padding: 20px;
+    }
+  
+    .company-logo {
+      margin: 5px;
+      max-width: 80px;
+    }
+  
+    .socialIcons li {
+      margin: 5px;
+    }
+  }
+  
   #blog-container {
     width: 80%;
     max-width: 800px;
