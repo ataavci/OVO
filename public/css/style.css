@@ -75,14 +75,14 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 100%;
+        width: 80%; /* Genişliği azaltarak ortalamayı kolaylaştırıyoruz */
         padding: 10px;
         box-sizing: border-box;
         z-index: 2;
     }
 
     .carousel-caption h1 {
-        font-size: 20px;
+        font-size: 18px;
         font-family: 'Montserrat', sans-serif;
         letter-spacing: 0;
         font-weight: 500;
@@ -97,7 +97,7 @@
         line-height: 1.5;
         text-align: center;
         margin: 10px auto;
-        width: 90%;
+        width: 100%;
     }
 }
 
