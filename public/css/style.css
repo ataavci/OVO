@@ -19,11 +19,11 @@
 
 .w-100.height {
     height: 90vh;
-    width: 80%; /* 150% yerine 100% yaparak kaymayı önleyin */
+    width: 150%; /* 150% yerine 100% yaparak kaymayı önleyin */
 }
 
 .carousel-item {
-    min-height: 100px;
+    min-height: 200px;
     position: relative;
 }
 
@@ -70,14 +70,14 @@
     z-index: 1;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1150px) {
     .carousel-caption {
         font-family: 'Montserrat', sans-serif;
         text-align: center;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        
+        top: 50%; /* Üstten ortalamak için */
+        left: 50%; /* Soldan ortalamak için */
+        transform: translate(-5%); /* Tam olarak ortalamak için */
         width: 80%; /* Genişliği azaltarak ortalamayı kolaylaştırıyoruz */
         padding: 10px;
         box-sizing: border-box;
@@ -94,9 +94,9 @@
     }
 
     .carousel-caption p {
-        font-size: 10px; /* Paragraf boyutunu azaltın */
+        font-size: 14px; /* Paragraf boyutunu azaltın */
         line-height: 1.5;
-        margin: 20px auto;
+        margin: 10px auto;
         width: 100%;
         text-align: center; /* Ortalamak için eklendi */
     }
