@@ -690,8 +690,10 @@ details[open] .details-box {
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
-    width: 30%;
+    width: 100%; /* Genişliği kutuların taşmaması için %100 yapalım */
+    max-width: 300px; /* İçeriklerin taşmaması için maksimum genişlik ayarlayalım */
     box-sizing: border-box;
+    text-align: center; /* Yazıları kutu içinde ortalamak için */
 }
 
 #trading-compliance {
@@ -709,14 +711,13 @@ details[open] .details-box {
     border: 2px solid #400080;
 }
 
-
 /* styles.css */
 
 #compliance-container {
     text-align: center;
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 50%;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     width: 60%;
@@ -747,9 +748,11 @@ details[open] .details-box {
     font-weight: bold;
     padding: 20px;
     border-radius: 10px;
-    width: 80%;
+    width: 100%; /* Genişliği kutuların taşmaması için %100 yapalım */
+    max-width: 300px; /* İçeriklerin taşmaması için maksimum genişlik ayarlayalım */
     box-sizing: border-box;
     margin: 10px auto;
+    text-align: center; /* Yazıları kutu içinde ortalamak için */
 }
 
 #compliance-how {
@@ -761,7 +764,6 @@ details[open] .details-box {
     background-color: #e0dfff;
     border: 2px solid #400080;
 }
-
 
 
 #sustainability-blog {
