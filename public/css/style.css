@@ -35,22 +35,9 @@
     right: 0;
 }
 
-.carousel-caption h1 {
-    font-size: 60px;
-    letter-spacing: 1px;
-    font-weight: 500;
-    line-height: 60px;
-    text-align: center;
-    color: #fff; /* Yazı rengini beyaz yap */
-}
 
-.carousel-caption p {
-    font-size: 16px;
-    line-height: 1.9;
-    width: 60%;
-    margin: 0 auto; /* Ortalamak için eklendi */
-    color: #fff; /* Yazı rengini beyaz yap */
-}
+
+
 
 .carousel-item .carousel-caption input {
     padding: 0.73rem 1rem;
