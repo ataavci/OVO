@@ -2,6 +2,16 @@ const express=require("express");
 const router=express.Router();
 const path=require("path");
 
+router.use("/avrupa", function(req, res) {
+  
+    res.render("users/avrupa");
+});
+
+router.use("/avrupa-tr", function(req, res) {
+  
+    res.render("users/avrupa-tr");
+});
+
 router.use("/#special", function(req, res) {
   
     res.render("users/index/#special");

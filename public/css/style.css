@@ -610,6 +610,7 @@ details[open] .details-box {
     gap: 20px;
     max-width: 800px;
     margin: 0 auto;
+    font-weight: bold;
 }
 
 .comment {
@@ -716,10 +717,10 @@ details[open] .details-box {
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
-    width: 100%; /* Genişliği kutuların taşmaması için %100 yapalım */
-    max-width: 300px; /* İçeriklerin taşmaması için maksimum genişlik ayarlayalım */
+    width: 100%; 
+    max-width:300 px; 
     box-sizing: border-box;
-    text-align: center; /* Yazıları kutu içinde ortalamak için */
+    text-align: center; 
 }
 
 #trading-compliance {
@@ -774,11 +775,11 @@ details[open] .details-box {
     font-weight: bold;
     padding: 20px;
     border-radius: 10px;
-    width: 100%; /* Genişliği kutuların taşmaması için %100 yapalım */
-    max-width: 300px; /* İçeriklerin taşmaması için maksimum genişlik ayarlayalım */
+    width: 100%; 
+    max-width: 300px; 
     box-sizing: border-box;
     margin: 10px auto;
-    text-align: center; /* Yazıları kutu içinde ortalamak için */
+    text-align: center; 
 }
 
 #compliance-how {
@@ -943,3 +944,99 @@ details[open] .details-box {
     font-size: 0.9em;
   }
   
+  #important-dates .timeline-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#important-dates .title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#important-dates .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#important-dates .timeline-line {
+    width: 4px;
+    height: 100%;
+    background-color: #008080;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+#important-dates .timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+#important-dates .hexagon {
+    width: 100px;
+    height: 55px;
+    background-color: #008080;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#important-dates .hexagon:before,
+#important-dates .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+#important-dates .hexagon:before {
+    bottom: 100%;
+    border-bottom: 27.5px solid #008080;
+}
+
+#important-dates .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 27.5px solid #008080;
+}
+
+#important-dates .hexagon-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#important-dates .hexagon-content {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #008080;
+}
+
+#important-dates .description {
+    max-width: 600px;
+    text-align: center;
+    margin-top: 20px; /* Adjust the value as needed */
+}
