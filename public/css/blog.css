@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: 'montserrat',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.navbar a{
+    font-size: 14px;
+    font-weight: 1000;
+}
+.navbar-toggler{
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0,3;
+    background: #289a11;;
+}
+
+
+.w-100.height {
+    height: 80vh;
+    width: 100%; /* 150% yerine 100% yaparak kaymayı önleyin */
+}
+
+.carousel-item {
+    min-height: 200px;
+    position: relative;
+}
+
+.carousel-caption {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 200px; /* İhtiyaca göre ayarlayın */
+    z-index: 2;
+    position: absolute; /* Konumlandırmayı düzenle */
+    bottom: 20px; /* Yazının alt kenara yakınlığını ayarla */
+    left: 0;
+    right: 0;
+}
+
+
+
+
+
+.carousel-item .carousel-caption input {
+    padding: 0.73rem 1rem;
+}
+
+.carousel-inner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+   
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1150px) {
+    .carousel-caption {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        position: absolute;
+        top: 50%; /* Üstten ortalamak için */
+        left: 50%; /* Soldan ortalamak için */
+        transform: translate(-5%); /* Tam olarak ortalamak için */
+        width: 80%; /* Genişliği azaltarak ortalamayı kolaylaştırıyoruz */
+        padding: 10px;
+        box-sizing: border-box;
+        z-index: 2;
+    }
+
+    .carousel-caption h1 {
+        font-size: 20px; 
+        font-weight: 500;
+        line-height: 1.2;
+        margin: 0;
+        text-align: center; 
+    }
+
+    .carousel-caption p {
+        font-size: 14px; 
+        line-height: 1.5;
+        margin: 10px auto;
+        width: 100%;
+        text-align: center; 
+    }
+}
+footer {
+    background-image: url('/static/image/gemi.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+    text-align: center;
+    color: white; /* Footer içeriğinin görünürlüğünü artırmak için yazı rengini beyaz yap */
+  }
+  
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .companyLogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .company-logo {
+    margin: 10px;
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .socialIcons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .socialIcons a {
+    color: rgb(214, 230, 72);
+    text-decoration: none; /* Bağlantı alt çizgisini kaldırmak için */
+  }
+  
+  .socialIcons a:hover {
+    color: rgb(58, 206, 29); /* Üzerine gelindiğinde de siyah kalsın */
+  }
+  
+  .socialIcons li {
+    margin: 0 10px;
+  }
+  
+  /* Mobil cihazlar için medya sorgusu */
+  @media (max-width: 768px) {
+    .footerContainer {
+      padding: 20px;
+    }
+  
+    .company-logo {
+      margin: 5px;
+      max-width: 80px;
+    }
+  
+    .socialIcons li {
+      margin: 5px;
+    }
+  }
