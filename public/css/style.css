@@ -23,8 +23,8 @@
 }
 
 .carousel-item {
-    min-height: 200px;
-    position: relative;
+    min-height: 100px;
+    position: center;
 }
 
 .carousel-caption {
