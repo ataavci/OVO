@@ -18,12 +18,12 @@
 
 
 .w-100.height {
-    height: 120vh;
-    width: 100%; /* 150% yerine 100% yaparak kaymayı önleyin */
+    height: 700px; 
+    width: 120%; /* 150% yerine 100% yaparak kaymayı önleyin */
 }
 
 .carousel-item {
-    min-height: 100px;
+    min-height: 200px;
     position: center;
 }
 
